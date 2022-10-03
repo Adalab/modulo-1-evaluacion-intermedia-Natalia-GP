@@ -57,6 +57,7 @@
     font-size: 40px;
 }
 .h1::first-line{
-    word-spacing: 100vh;
+    
+    word-spacing: 200vh;
 }
 }
