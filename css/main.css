@@ -1,8 +1,11 @@
 :root{
-    font-family: 'Rubik', sans-serif;
-    --color-grey: #4a4a4a;
-    --color-white: #FFFFFF;
-    --color-green: #3CDBC0;
+    --font-main: 'Rubik', sans-serif;
+    --text-menu: #4a4a4a;
+    --background-main: #FFFFFF;
+    --text-main: #3CDBC0;
+}
+body{
+    font-family: var(--font-main);
 }
 .header{
     display: flex;
@@ -10,15 +13,18 @@
     align-items: center;
     width: 100vw;
     position: fixed;
-    background-color:var(--color-white);
+    background-color:var(--background-main);
 }
 .nav{
     display: flex;
-    list-style: none; 
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 13px; 
+
 }
 .link{
     text-decoration: none;
-    color: var(--color-grey);
+    color: var(--text-menu);
     padding: 10px 10px 13px;
     text-transform: uppercase;
 }
@@ -26,32 +32,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-green);
+    background-color: var(--text-main);
     height: 100vh;
 }
 .h1{
-    color: var(--color-white);
+    color: var(--background-main);
     font-size: 30px;
     text-align: center;
     font-weight: bold;
     text-transform: capitalize;
     word-spacing: 100vw;
 }
-.logo{
+.link-logo{
     align-items: center;
     justify-content: center;
     width: 155px;
     padding-top: 10px;
 }
 @media screen and (min-width: 768px) {
+
 .header{
     flex-direction: row;
     justify-content:space-between;
-    padding-left: 30px;
-    padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 20px;    
+}    
+.link-logo {
+    justify-content: left;
+    margin-top: 0px;
 }
+.logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;  
+}
+
 .h1{
     font-size: 40px;
+}
+.nav{
+    margin-right: 30px
 }
 }
